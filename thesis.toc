@@ -1,0 +1,60 @@
+\contentsline {chapter}{Abstract}{1}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problem and motivation}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Research question and objectives}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Structure of the thesis}{6}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Literature review and theoretical framework}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Public transport as a networked spatial system}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}How network analysis is applied in public transport research}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Network structure, hubs, and centrality}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Bottlenecks, constraints, and robustness}{13}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Efficiency and transfer-free connectivity}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.6}The relevance of small and medium-sized city contexts}{15}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Research gap, contribution, and analytical expectations}{15}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Data and operationalisation}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Case and scope of the network}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data sources and digitisation}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Harmonising stop names and ensuring comparability}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Constructing the transfer-free connectivity network}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Node definition}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Defining a connection without transfers}{19}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}From stop sequences to an adjacency matrix}{19}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Variables and outcomes}{19}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Summary of the analytic datasets}{20}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Methods}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Analytical approach and software}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Preprocessing, scope filters, and data validation}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Scope filters}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Harmonising stop names}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Basic plausibility checks}{22}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Network construction}{22}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Nodes}{23}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Defining transfer-free connectivity}{23}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Adjacency matrix construction}{23}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Network measures and operationalisation}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Pair-level connectivity outcomes}{24}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Node-level measures for hubs and bottlenecks}{24}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Global measures of connectivity and clustering}{25}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Permutation-based inference for centrality relationships}{26}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Comparative strategy and winners-and-losers analysis}{27}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Robustness analysis (node-removal simulations)}{27}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Results}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Network overview in 2019 and 2025}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hubs and bottlenecks}{30}{section.5.2}%
+\contentsline {paragraph}{Permutation-based regression results.}{31}{section*.3}%
+\contentsline {section}{\numberline {5.3}Changes in transfer-free connectivity between 2019 and 2025}{31}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Winners and losers at the stop level}{32}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Robustness analysis}{33}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Stop additions and removals}{35}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Summary of main findings}{35}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Discussion}{36}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Interpreting the structural change from 2019 to 2025}{36}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Hubs, bottlenecks, and what they mean in a transfer-based representation}{37}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Practical implications and trade-offs}{38}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Limitations}{38}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Implications for future research}{40}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusion and outlook}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Answering the research question}{41}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Outlook}{42}{section.7.2}%
+\contentsline {chapter}{AI tool use statement}{44}{chapter*.4}%
+\contentsline {chapter}{Eigenst\"{a}ndigkeitserkl\"{a}rung}{47}{chapter*.6}%

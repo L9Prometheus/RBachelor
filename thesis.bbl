@@ -1,0 +1,118 @@
+\begin{thebibliography}{}
+
+\bibitem[Albert et~al., 2000]{albert2000}
+Albert, R., Jeong, H., and Barab{\'a}si, A.-L. (2000).
+\newblock Error and attack tolerance of complex networks.
+\newblock {\em Nature}, 406(6794):378--382.
+
+\bibitem[Alessandretti et~al., 2022]{alessandretti2022}
+Alessandretti, L., Natera~Orozco, L.~G., Saberi, M., Szell, M., and Battiston, F. (2022).
+\newblock Multimodal urban mobility and multilayer transport networks.
+\newblock {\em Environment and Planning B: Urban Analytics and City Science}, 50(8):2038--2070.
+
+\bibitem[Artime et~al., 2022]{artime2022}
+Artime, O., Benigni, B., Bertagnolli, G., d'Andrea, V., Gallotti, R., Ghavasieh, A., Raimondo, S., and De~Domenico, M. (2022).
+\newblock {\em Multilayer Network Science: From Cells to Societies}.
+\newblock Cambridge University Press.
+
+\bibitem[Barth{\'e}lemy, 2011]{barthelemy2011}
+Barth{\'e}lemy, M. (2011).
+\newblock Spatial networks.
+\newblock {\em Physics Reports}, 499(1--3):1--101.
+
+\bibitem[Cats, 2017]{cats2017}
+Cats, O. (2017).
+\newblock Topological evolution of a metropolitan rail transport network: The case of {Stockholm}.
+\newblock {\em Journal of Transport Geography}, 62:172--183.
+
+\bibitem[Cicchini et~al., 2024]{cicchini2024}
+Cicchini, T., Caridi, I., and Ermann, L. (2024).
+\newblock Robustness of the public transport network against attacks on its routes.
+\newblock {\em Chaos, Solitons \& Fractals}, 184:115019.
+
+\bibitem[Cipriani et~al., 2019]{cipriani2019}
+Cipriani, E., Fusco, G., Patella, S.~M., Petrelli, M., and Quadrifoglio, L. (2019).
+\newblock Transit network design for small-medium size cities.
+\newblock {\em Transportation Planning and Technology}, 42(1):84--97.
+
+\bibitem[Derrible and Kennedy, 2010]{derrible2010}
+Derrible, S. and Kennedy, C. (2010).
+\newblock The complexity and robustness of metro networks.
+\newblock {\em Physica A: Statistical Mechanics and Its Applications}, 389(17):3678--3691.
+
+\bibitem[Gallotti and Barth{\'e}lemy, 2014]{gallotti2014}
+Gallotti, R. and Barth{\'e}lemy, M. (2014).
+\newblock Anatomy and efficiency of urban multimodal mobility.
+\newblock {\em Scientific Reports}, 4:6911.
+
+\bibitem[{GitHub}, 2025]{github2025}
+{GitHub} (2025).
+\newblock {GitHub Copilot} [{AI} pair programmer].
+\newblock \url{https://github.com/features/copilot}.
+
+\bibitem[Hu et~al., 2025]{hu2025}
+Hu, Z., Yang, J., Chang, S., and Zhang, Y. (2025).
+\newblock Robustness analysis of bus-rail multilayer network based on dynamic passenger flow.
+\newblock {\em Reliability Engineering \& System Safety}, 264:111403.
+
+\bibitem[Iseki and Taylor, 2009]{iseki2009}
+Iseki, H. and Taylor, B.~D. (2009).
+\newblock Not all transfers are created equal: Towards a framework relating transfer connectivity to travel behaviour.
+\newblock {\em Transport Reviews}, 29(6):777--800.
+
+\bibitem[Latora and Marchiori, 2001]{latora2001}
+Latora, V. and Marchiori, M. (2001).
+\newblock Efficient behavior of small-world networks.
+\newblock {\em Physical Review Letters}, 87(19):198701.
+
+\bibitem[Li et~al., 2024]{li2024}
+Li, J.~Y., Teng, J., and Wang, H. (2024).
+\newblock Measuring route diversity in spatial and spatial-temporal public transport networks.
+\newblock {\em Transport Policy}, 146:42--58.
+
+\bibitem[{OpenAI}, 2025]{openai2025}
+{OpenAI} (2025).
+\newblock {ChatGPT} [large language model].
+\newblock \url{https://chat.openai.com}.
+
+\bibitem[Phipson and Smyth, 2010]{phipson2010}
+Phipson, B. and Smyth, G.~K. (2010).
+\newblock Permutation p-values should never be zero: Calculating exact p-values when permutations are randomly drawn.
+\newblock {\em Statistical Applications in Genetics and Molecular Biology}, 9(1):Article 39.
+
+\bibitem[{R Core Team}, 2025]{rcore2025}
+{R Core Team} (2025).
+\newblock R: A language and environment for statistical computing.
+\newblock R Foundation for Statistical Computing, Vienna, Austria. \url{https://www.R-project.org/}.
+
+\bibitem[{\v{S}}filigoj et~al., 2025]{sfiligoj2025}
+{\v{S}}filigoj, T., Peperko, A., Bajec, P., and Cats, O. (2025).
+\newblock Node importance corresponds to passenger demand in public transport networks.
+\newblock {\em Physica A: Statistical Mechanics and Its Applications}, 659:130354.
+
+\bibitem[Shanmukhappa et~al., 2019]{shanmukhappa2019}
+Shanmukhappa, T., Ho, I. W.-H., Tse, C.~K., and Leung, K.~K. (2019).
+\newblock Recent development in public transport network analysis from the complex network perspective.
+\newblock {\em IEEE Circuits and Systems Magazine}, 19(4):39--65.
+
+\bibitem[{Stadtwerke Konstanz}, 2019]{stadtwerke2019}
+{Stadtwerke Konstanz} (2019).
+\newblock Roter arnold: Gesamtfahrplan bus 2019.
+\newblock [PDF].
+
+\bibitem[{Stadtwerke Konstanz}, 2025]{stadtwerke2025}
+{Stadtwerke Konstanz} (2025).
+\newblock Roter arnold: Gesamtfahrplan bus ab 29.11.2025.
+\newblock [PDF].
+
+\bibitem[Welch and Mishra, 2013]{welch2013}
+Welch, T.~F. and Mishra, S. (2013).
+\newblock A measure of equity for public transit connectivity.
+\newblock {\em Journal of Transport Geography}, 33:29--41.
+
+\bibitem[Zhang et~al., 2025]{zhang2025}
+Zhang, W., Chen, X., and Deng, W. (2025).
+\newblock An event-link network model based on representation in {P}-space.
+\newblock {\em Entropy}, 27(4):419.
+
+\end{thebibliography}

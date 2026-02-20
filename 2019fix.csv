@@ -1,0 +1,347 @@
+Von_Haltestelle;Nach_Haltestelle;Linie
+Staad/Autofähre;Allmannsdorf;1
+Allmannsdorf;An der Steig;1
+An der Steig;Tannenhof;1
+Tannenhof;Salzberg;1
+Salzberg;Klinikum Konstanz;1
+Klinikum Konstanz;Sternenplatz;1
+Sternenplatz;Schottenplatz;1
+Schottenplatz;Bürgerbüro;1
+Bürgerbüro;Lutherplatz;1
+Lutherplatz;Schulthaißstraße;1
+Schulthaißstraße;Döbelestraße;1
+Döbelestraße;Döbele;1
+Döbele;Schnetztor;1
+Schnetztor;Bodanplatz;1
+Bodanplatz;Bahnhof;1
+Bahnhof;Konzilstr./Theater;1
+Konzilstr./Theater;Sternenplatz;1
+Sternenplatz;Klinikum Konstanz;1
+Klinikum Konstanz;Salzberg;1
+Salzberg;Tannenhof;1
+Tannenhof;An der Steig;1
+An der Steig;Allmannsdorf;1
+Allmannsdorf;Staad/Autofähre;1
+Wollmatingen/Radolfzeller Str.;Wollmatingen/Rathaus;2
+Wollmatingen/Rathaus;Bodan;2
+Bodan;Hardtstr./Fürstenberg;2
+Hardtstr./Fürstenberg;Herosestraße;2
+Herosestraße;Fürstenberg;2
+Fürstenberg;Taborweg;2
+Taborweg;Friedhof;2
+Friedhof;Bismarcksteig;2
+Bismarcksteig;Zähringerplatz;2
+Zähringerplatz;Sternenplatz;2
+Sternenplatz;Schottenplatz;2
+Schottenplatz;Bürgerbüro;2
+Bürgerbüro;Schnetztor;2
+Schnetztor;Bodanplatz;2
+Bodanplatz;Bahnhof;2
+Bahnhof;Konzilstr./Theater;2
+Konzilstr./Theater;Sternenplatz;2
+Sternenplatz;Zähringerplatz;2
+Zähringerplatz;Bismarcksteig;2
+Bismarcksteig;Friedhof;2
+Friedhof;Taborweg;2
+Taborweg;Fürstenberg;2
+Fürstenberg;Herosestraße;2
+Herosestraße;Hardtstr./Fürstenberg;2
+Hardtstr./Fürstenberg;Bodan;2
+Bodan;Wollmatingen/Rathaus;2
+Wollmatingen/Rathaus;Wollmatingen/Radolfzeller Str.;2
+Brandenburger Straße;Karlsruher Straße;3
+Karlsruher Straße;Hardtstraße;3
+Hardtstraße;Reute-/Winkelstraße;3
+Reute-/Winkelstraße;Elberfeldstraße;3
+Elberfeldstraße;Fürstenberg;3
+Fürstenberg;Taborweg;3
+Taborweg;Friedhof;3
+Friedhof;Bismarcksteig;3
+Bismarcksteig;Zähringerplatz;3
+Zähringerplatz;Sternenplatz;3
+Sternenplatz;Schottenplatz;3
+Schottenplatz;Bürgerbüro;3
+Bürgerbüro;Schnetztor;3
+Schnetztor;Bodanplatz;3
+Bodanplatz;Bahnhof;3
+Bahnhof;Konzilstr./Theater;3
+Konzilstr./Theater;Sternenplatz;3
+Sternenplatz;Zähringerplatz;3
+Zähringerplatz;Bismarcksteig;3
+Bismarcksteig;Friedhof;3
+Friedhof;Taborweg;3
+Taborweg;Fürstenberg;3
+Fürstenberg;Elberfeldstraße;3
+Elberfeldstraße;Reute-/Winkelstraße;3
+Reute-/Winkelstraße;Reute-/Freibürgleweg;3
+Reute-/Freibürgleweg;Breslauer Straße Ost;3
+Breslauer Straße Ost;Breslauer Straße West;3
+Breslauer Straße West;Brandenburger Straße;3
+Bahnhof;Konzilstr./Theater;4/13
+Konzilstr./Theater;Sternenplatz;4/13
+Sternenplatz;Zähringerplatz;4/13
+Zähringerplatz;Allmannsdorfer Straße;4/13
+Allmannsdorfer Straße;Salzberg/Allmannsdorfer Str.;4/13
+Salzberg/Allmannsdorfer Str.;Tannenhof;4/13
+Tannenhof;An der Steig;4/13
+An der Steig;Allmannsdorf;4/13
+Allmannsdorf;Jugendherberge;4/13
+Jugendherberge;Egg/Universität;4/13
+Egg/Universität;Mainau;4/13
+Mainau;Litzelstetten/Waldfriedhof;4/13
+Litzelstetten/Waldfriedhof;Litzelstetten/Tankstelle;4/13
+Litzelstetten/Tankstelle;Litzelstetten/Zum Purren;4/13
+Litzelstetten/Zum Purren;Oberdorf;4/13
+Oberdorf;Dingelsdorf/Thingolthalle;4/13
+Dingelsdorf/Thingolthalle;Dingelsdorf/Ortsmitte;4/13
+Dingelsdorf/Ortsmitte;Dingelsdorf/Wallhauser Str.;4/13
+Dingelsdorf/Wallhauser Str.;Dingelsdorf/Klausenhorn;4/13
+Dingelsdorf/Klausenhorn;Wallhausen/Hafen;4/13
+Wallhausen/Hafen;Wallhausen/Linzgaublick;4/13
+Wallhausen/Linzgaublick;Wallhausen/Birnaublick;4/13
+Wallhausen/Birnaublick;Dettingen/Feuerwehr;4/13
+Dettingen/Feuerwehr;Dettingen/Ortsmitte;4/13
+Dettingen/Ortsmitte;Dettingen/Kinderspielplatz;4/13
+Dettingen/Kinderspielplatz;Wollmatingen/Rathaus;4/13
+Wollmatingen/Rathaus;Bahnhof Wollmatingen;4/13
+Bahnhof Wollmatingen;Max-Stromeyer-Straße West;4/13
+Max-Stromeyer-Straße West;Max-Stromeyer-Straße Ost;4/13
+Max-Stromeyer-Straße Ost;Neuwerk;4/13
+Neuwerk;Europabrücke Fernbusbahnhof;4/13
+Europabrücke Fernbusbahnhof;Bodenseeforum/IHK;4/13
+Bodenseeforum/IHK;Am Rheinufer;4/13
+Am Rheinufer;Sternenplatz/Spanierstraße;4/13
+Sternenplatz/Spanierstraße;Konzilstr./Theater;4/13
+Konzilstr./Theater;Bahnhof;4/13
+Bahnhof;Konzilstr./Theater;13/4
+Konzilstr./Theater;Sternenplatz/Spanierstraße;13/4
+Sternenplatz/Spanierstraße;Am Rheinufer;13/4
+Am Rheinufer;Bodenseeforum/IHK;13/4
+Bodenseeforum/IHK;Europabrücke Fernbusbahnhof;13/4
+Europabrücke Fernbusbahnhof;Neuwerk;13/4
+Neuwerk;Max-Stromeyer-Straße Ost;13/4
+Max-Stromeyer-Straße Ost;Max-Stromeyer-Straße West;13/4
+Max-Stromeyer-Straße West;Bahnhof Wollmatingen;13/4
+Bahnhof Wollmatingen;Wollmatingen/Rathaus;13/4
+Wollmatingen/Rathaus;Dettingen/Kinderspielplatz;13/4
+Dettingen/Kinderspielplatz;Dettingen/Ortsmitte;13/4
+Dettingen/Ortsmitte;Dettingen/Feuerwehr;13/4
+Dettingen/Feuerwehr;Wallhausen/Birnaublick;13/4
+Wallhausen/Birnaublick;Wallhausen/Linzgaublick;13/4
+Wallhausen/Linzgaublick;Wallhausen/Hafen;13/4
+Wallhausen/Hafen;Dingelsdorf/Klausenhorn;13/4
+Dingelsdorf/Klausenhorn;Dingelsdorf/Wallhauser Str.;13/4
+Dingelsdorf/Wallhauser Str.;Dingelsdorf/Ortsmitte;13/4
+Dingelsdorf/Ortsmitte;Dingelsdorf/Thingolthalle;13/4
+Dingelsdorf/Thingolthalle;Oberdorf;13/4
+Oberdorf;Litzelstetten/Zum Purren;13/4
+Litzelstetten/Zum Purren;Litzelstetten/Tankstelle;13/4
+Litzelstetten/Tankstelle;Litzelstetten/Waldfriedhof;13/4
+Litzelstetten/Waldfriedhof;Mainau;13/4
+Mainau;Egg/Universität;13/4
+Egg/Universität;Jugendherberge;13/4
+Jugendherberge;Allmannsdorf;13/4
+Allmannsdorf;An der Steig;13/4
+An der Steig;Tannenhof;13/4
+Tannenhof;Salzberg/Allmannsdorfer Str.;13/4
+Salzberg/Allmannsdorfer Str.;Allmannsdorfer Straße;13/4
+Allmannsdorfer Straße;Zähringerplatz;13/4
+Zähringerplatz;Sternenplatz;13/4
+Sternenplatz;Konzilstr./Theater;13/4
+Konzilstr./Theater;Bahnhof;13/4
+Bahnhof;Bodanplatz;5
+Bodanplatz;Döbele;5
+Döbele;Döbelestraße;5
+Döbelestraße;Schulthaißstraße;5
+Schulthaißstraße;Brüelstraße;5
+Brüelstraße;Gartenstraße;5
+Gartenstraße;Ellenrieder Gymnasium;5
+Ellenrieder Gymnasium;Laube/Niederburg;5
+Laube/Niederburg;Sternenplatz;5
+Sternenplatz;Eichhornstraße;5
+Eichhornstraße;Hebelstraße;5
+Hebelstraße;Rosenau;5
+Rosenau;Kliniken Schmieder;5
+Kliniken Schmieder;Bodensee-Therme Konstanz;5
+Bodensee-Therme Konstanz;Bodensee-Stadion;5
+Bodensee-Stadion;Kliniken Schmieder;5
+Kliniken Schmieder;Rosenau;5
+Rosenau;Hebelstraße;5
+Hebelstraße;Klinikum Konstanz;5
+Klinikum Konstanz;Sternenplatz;5
+Sternenplatz;Konzilstr./Theater;5
+Konzilstr./Theater;Bahnhof;5
+ZfP Reichenau;Feursteinstraße;6
+Feursteinstraße;Wollmatingen/Kindlebildstr.;6
+Wollmatingen/Kindlebildstr.;Bodan/Riedstraße;6
+Bodan/Riedstraße;Riedstraße;6
+Riedstraße;Bahnhof Wollmatingen;6
+Bahnhof Wollmatingen;Byk-Gulden-Straße;6
+Byk-Gulden-Straße;Fritz-Arnold-Straße;6
+Fritz-Arnold-Straße;Carl-Benz-Straße;6
+Carl-Benz-Straße;Rudolf-Diesel-Straße;6
+Rudolf-Diesel-Straße;Line-Eid-Straße;6
+Line-Eid-Straße;Stromeyersdorf;6
+Stromeyersdorf;Neuwerk;6
+Neuwerk;Stadtwerke;6
+Stadtwerke;Gottmannplatz;6
+Gottmannplatz;Markgrafenstraße;6
+Markgrafenstraße;Tenbrinkstraße;6
+Tenbrinkstraße;Hallenbad;6
+Hallenbad;Sternenplatz/Spanierstraße;6
+Sternenplatz/Spanierstraße;Konzilstr./Theater;6
+Konzilstr./Theater;Bahnhof;6
+Bahnhof;Konzilstr./Theater;6
+Konzilstr./Theater;Sternenplatz/Spanierstraße;6
+Sternenplatz/Spanierstraße;Tenbrinkstraße;6
+Tenbrinkstraße;Markgrafenstraße;6
+Markgrafenstraße;Gottmannplatz;6
+Gottmannplatz;Stadtwerke;6
+Stadtwerke;Neuwerk;6
+Neuwerk;Stromeyersdorf;6
+Stromeyersdorf;Line-Eid-Straße;6
+Line-Eid-Straße;Rudolf-Diesel-Straße;6
+Rudolf-Diesel-Straße;Carl-Benz-Straße;6
+Carl-Benz-Straße;Fritz-Arnold-Straße;6
+Fritz-Arnold-Straße;Byk-Gulden-Straße;6
+Byk-Gulden-Straße;Bahnhof Wollmatingen;6
+Bahnhof Wollmatingen;Riedstraße;6
+Riedstraße;Bodan/Riedstraße;6
+Bodan/Riedstraße;Wollmatingen/Rathaus;6
+Wollmatingen/Rathaus;Litzelstetter Straße;6
+Litzelstetter Straße;Am Bettenberg;6
+Am Bettenberg;Litzelstetten/Waldfriedhof;6
+Litzelstetten/Waldfriedhof;Litzelstetten/Tankstelle;6
+Litzelstetten/Tankstelle;Litzelstetten/Zum Purren;6
+Litzelstetten/Zum Purren;Wollmatingen/Kindlebildstr.;6
+Wollmatingen/Kindlebildstr.;Feursteinstraße;6
+Feursteinstraße;ZfP Reichenau;6
+Universität;Jacob-Burckhardt-Straße;9A
+Jacob-Burckhardt-Straße;Königsbau;9A
+Königsbau;Friedrichstraße;9A
+Friedrichstraße;Zähringerplatz;9A
+Zähringerplatz;Sternenplatz;9A
+Sternenplatz;Schottenplatz;9A
+Schottenplatz;Ellenrieder Gymnasium;9A
+Ellenrieder Gymnasium;Gartenstraße;9A
+Gartenstraße;Brüelstraße;9A
+Brüelstraße;Schulthaißstraße;9A
+Schulthaißstraße;Döbelestraße;9A
+Döbelestraße;Döbele;9A
+Döbele;Schnetztor;9A
+Schnetztor;Bodanplatz;9A
+Bodanplatz;Bahnhof;9A
+Bahnhof;Konzilstr./Theater;9A
+Konzilstr./Theater;Sternenplatz;9A
+Sternenplatz;Zähringerplatz;9A
+Zähringerplatz;Friedrichstraße;9A
+Friedrichstraße;Königsbau;9A
+Königsbau;Jacob-Burckhardt-Straße;9A
+Jacob-Burckhardt-Straße;Universität;9A
+Universität;Jacob-Burckhardt-Straße;9B
+Jacob-Burckhardt-Straße;Sonnenbühlstraße/Rauhgasse;9B
+Sonnenbühlstraße/Rauhgasse;Sonnenbühlstraße;9B
+Sonnenbühlstraße;Tannenhof;9B
+Tannenhof;Salzberg/Allmannsdorfer Str.;9B
+Salzberg/Allmannsdorfer Str.;Allmannsdorfer Straße;9B
+Allmannsdorfer Straße;Zähringerplatz;9B
+Zähringerplatz;Sternenplatz;9B
+Sternenplatz;Schottenplatz;9B
+Schottenplatz;Bürgerbüro;9B
+Bürgerbüro;Schnetztor;9B
+Schnetztor;Bodanplatz;9B
+Bodanplatz;Bahnhof;9B
+Bahnhof;Konzilstr./Theater;9B
+Konzilstr./Theater;Sternenplatz;9B
+Sternenplatz;Zähringerplatz;9B
+Zähringerplatz;Allmannsdorfer Straße;9B
+Allmannsdorfer Straße;Salzberg/Allmannsdorfer Str.;9B
+Salzberg/Allmannsdorfer Str.;Tannenhof;9B
+Tannenhof;Sonnenbühlstraße;9B
+Sonnenbühlstraße;Sonnenbühlstraße/Rauhgasse;9B
+Sonnenbühlstraße/Rauhgasse;Jacob-Burckhardt-Straße;9B
+Jacob-Burckhardt-Straße;Universität;9B
+Zähringerplatz;Friedrichstraße;9C
+Friedrichstraße;Königsbau;9C
+Königsbau;Jacob-Burckhardt-Straße;9C
+Jacob-Burckhardt-Straße;Universität;9C
+Universität;Jacob-Burckhardt-Straße;9C
+Jacob-Burckhardt-Straße;Königsbau;9C
+Königsbau;Friedrichstraße;9C
+Friedrichstraße;Zähringerplatz;9C
+Bahnhof Wollmatingen;Karlsruher Straße;11
+Karlsruher Straße;Hardtstr./Fürstenberg;11
+Hardtstr./Fürstenberg;Herosestraße;11
+Herosestraße;Gutenbergweg;11
+Gutenbergweg;Geschwister-Scholl-Schule;11
+Geschwister-Scholl-Schule;Universität;11
+Universität;Jacob-Burckhardt-Straße;11
+Jacob-Burckhardt-Straße;Sonnenbühlstraße/Rauhgasse;11
+Sonnenbühlstraße/Rauhgasse;Sonnenbühlstraße;11
+Sonnenbühlstraße;Sonnenbühlstraße/Tannenhof;11
+Sonnenbühlstraße/Tannenhof;An der Steig;11
+An der Steig;Allmannsdorf;11
+Allmannsdorf;Staad/Autofähre;11
+Staad/Autofähre;Allmannsdorf;11
+Allmannsdorf;An der Steig;11
+An der Steig;Sonnenbühlstraße/Tannenhof;11
+Sonnenbühlstraße/Tannenhof;Sonnenbühlstraße;11
+Sonnenbühlstraße;Sonnenbühlstraße/Rauhgasse;11
+Sonnenbühlstraße/Rauhgasse;Jacob-Burckhardt-Straße;11
+Jacob-Burckhardt-Straße;Universität;11
+Universität;Geschwister-Scholl-Schule;11
+Geschwister-Scholl-Schule;Gutenbergweg;11
+Gutenbergweg;Buhlenweg;11
+Buhlenweg;Herosestraße;11
+Herosestraße;Breslauer Straße Ost;11
+Breslauer Straße Ost;Breslauer Straße West;11
+Breslauer Straße West;Bahnhof Wollmatingen;11
+Urisberg;Schwaketenstraße;12
+Schwaketenstraße;Gabelsbergerstraße;12
+Gabelsbergerstraße;Gutenbergweg;12
+Gutenbergweg;Buhlenweg;12
+Buhlenweg;Fürstenberg;12
+Fürstenberg;Taborweg;12
+Taborweg;Friedhof;12
+Friedhof;Bismarcksteig;12
+Bismarcksteig;Zähringerplatz;12
+Zähringerplatz;Sternenplatz;12
+Sternenplatz;Schottenplatz;12
+Schottenplatz;Bürgerbüro;12
+Bürgerbüro;Schnetztor;12
+Schnetztor;Bodanplatz;12
+Bodanplatz;Bahnhof;12
+Bahnhof;Konzilstr./Theater;12
+Konzilstr./Theater;Sternenplatz;12
+Sternenplatz;Zähringerplatz;12
+Zähringerplatz;Bismarcksteig;12
+Bismarcksteig;Friedhof;12
+Friedhof;Taborweg;12
+Taborweg;Fürstenberg;12
+Fürstenberg;Buhlenweg;12
+Buhlenweg;Gutenbergweg;12
+Gutenbergweg;Schwaketenbad;12
+Schwaketenbad;Gabelsbergerstraße;12
+Gabelsbergerstraße;Schwaketenstraße;12
+Schwaketenstraße;Urisberg;12
+Pfeiferhölzle Wendeplatte;Pfeiferhölzle;14
+Pfeiferhölzle;Danziger Straße;14
+Danziger Straße;Jacob-Burckhardt-Straße;14
+Jacob-Burckhardt-Straße;Königsbau;14
+Königsbau;Friedrichstraße;14
+Friedrichstraße;Zähringerplatz;14
+Zähringerplatz;Sternenplatz;14
+Sternenplatz;Schottenplatz;14
+Schottenplatz;Bürgerbüro;14
+Bürgerbüro;Schnetztor;14
+Schnetztor;Bodanplatz;14
+Bodanplatz;Bahnhof;14
+Bahnhof;Konzilstr./Theater;14
+Konzilstr./Theater;Sternenplatz;14
+Sternenplatz;Zähringerplatz;14
+Zähringerplatz;Friedrichstraße;14
+Friedrichstraße;Königsbau;14
+Königsbau;Jacob-Burckhardt-Straße;14
+Jacob-Burckhardt-Straße;Danziger Straße;14
+Danziger Straße;Pfeiferhölzle;14
+Pfeiferhölzle;Pfeiferhölzle Wendeplatte;14
