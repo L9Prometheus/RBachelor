@@ -1,0 +1,21 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# PDF output
+*.pdf
+
+# Python virtual environment
+.venv/
+
+# Text output files
+permutation_output.txt
+test_normalized.txt
+test_run.txt

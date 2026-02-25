@@ -24,7 +24,7 @@
 ]{geometry}
 
 % ---------------------------------------------------------------------------
-%  Line spacing (1.5)
+%  Line spacing (~1.5 effective with lmodern)
 % ---------------------------------------------------------------------------
 \linespread{1.3}
 
@@ -75,6 +75,7 @@
 %  DOCUMENT
 % ═══════════════════════════════════════════════════════════════════════════════
 \begin{document}
+\pagenumbering{Alph}% suppress duplicate page-number destinations on title page
 
 % ---------------------------------------------------------------------------
 %  Title page — Universität Konstanz style
@@ -82,46 +83,47 @@
 \begin{titlepage}
   \centering
 
-  % University logo placeholder – replace with actual logo file
-  \vspace*{1cm}
-  % \includegraphics[width=6cm]{unikonstanz-logo.pdf}
+  \vspace*{1.5cm}
 
-  {\Large\scshape\color{unikn-seeblau} Universit\"{a}t Konstanz}\\[0.3cm]
-  {\large Fachbereich Politik- und Verwaltungswissenschaft}\\[0.15cm]
-  {\large Department of Politics and Public Administration}
+  {\Large\underline{A Network-Analytic Study of the Public Transport Network}}\\[0.4cm]
+  {\Large\underline{in Konstanz: Structure, Hubs, and Bottlenecks}}
 
-  \vspace{2cm}
-  \rule{\textwidth}{1.5pt}\\[0.5cm]
-  {\huge\bfseries\color{unikn-darkblue}
-    How Is the Public Transport Network\\[0.25cm]
-    in Konstanz Structured?}\\[0.4cm]
-  {\Large\color{unikn-darkblue}
-    Hubs, Bottlenecks, and Network Change\\
-    Between the 2019 and 2025 Timetable Versions}\\[0.3cm]
-  \rule{\textwidth}{1.5pt}
+  \vspace{1cm}
+  {\large Bachelorarbeit}
 
-  \vspace{1.5cm}
-  {\large Bachelor Thesis}\\[0.5cm]
-  {\large Submitted in Partial Fulfilment of the Requirements for the Degree of}\\[0.2cm]
-  {\large\textbf{Bachelor of Arts (B.\,A.)}}
+  \vspace{1cm}
+  {\large vorgelegt von}\\[0.3cm]
+  {\large Kirn, Levi}\\[0.2cm]
+  {\large 01/1269684}
+
+  \vspace{1cm}
+  {\large an der}
+
+  \vspace{0.6cm}
+  \includegraphics[width=6cm]{logo.png}
+
+  \vspace{0.6cm}
+  {\large Sektion Politik -- Recht -- Wirtschaft}\\[0.2cm]
+  {\large Fachbereich Politik- und Verwaltungswissenschaft}
 
   \vfill
 
-  \begin{tabular}{rl}
-    \textbf{Author:}       & Levi \\[0.15cm]
-    % \textbf{Matrikelnr.:}  & 01/XXXXXX \\[0.15cm]
-    \textbf{First examiner:}  & Prof.\,Dr.\ [Name] \\[0.15cm]
-    \textbf{Second examiner:} & [Name] \\[0.15cm]
-    \textbf{Date:}            & \today \\
-  \end{tabular}
+  \begin{flushleft}
+  {\large 1.~Gutachterin: Prof.\,Dr.\ Termeh Shafie}\\[0.3cm]
+  {\large 2.~Gutachter: Prof.\,Dr.\ Peter Selb}
 
-  \vspace{1.5cm}
+  \vspace{1cm}
+  {\large Konstanz, 2026}
+  \end{flushleft}
+
+  \vspace{1cm}
 \end{titlepage}
 
 % ---------------------------------------------------------------------------
 %  Abstract
 % ---------------------------------------------------------------------------
 \chapter*{Abstract}
+\pagenumbering{roman}% front matter in roman numerals
 \addcontentsline{toc}{chapter}{Abstract}
 
 This thesis examines how the public bus network in Konstanz is structured, which hubs and bottlenecks can be identified, and how these features change between two timetable versions (2019 and 2025).
@@ -144,6 +146,7 @@ Overall, the findings indicate a stable backbone combined with redistribution of
 % ---------------------------------------------------------------------------
 \tableofcontents
 \clearpage
+\pagenumbering{arabic}
 
 % ═══════════════════════════════════════════════════════════════════════════════
 %  CHAPTER 1 — Introduction
@@ -169,6 +172,10 @@ The thesis is also motivated by change.
 Timetables are not static, and service reforms can alter not only individual routes but also the network properties that emerge from the full set of services.
 Comparing two timetable versions provides a concrete before-and-after design that makes network change observable.
 In this thesis, two snapshots of the Konstanz bus network are compared, one based on the 2019 timetable and one based on the 2025 timetable.
+The practical relevance of this comparison is underscored by the public reaction to the 2025 timetable reform.
+Following its introduction, numerous passengers voiced dissatisfaction with changes to familiar routes and connections, and the restructuring generated considerable local debate about whether the new service design had improved or worsened everyday mobility.
+A network-analytic perspective can contribute to this discussion by providing an evidence-based structural assessment of what actually changed in terms of direct reachability, rather than relying solely on individual perceptions or anecdotal reports.
+
 The empirical focus is deliberately placed on direct connectivity without transfers, because transfer-free travel is both highly salient for passengers and analytically transparent as a network relation.
 
 \section{Research question and objectives}\label{sec:research-question}
@@ -195,25 +202,6 @@ Importantly, this thesis does not aim to provide a full operational evaluation o
 Instead, it focuses on the structural implications of service patterns and their change over time.
 This emphasis keeps the analysis feasible at bachelor-thesis scope while still enabling theoretically meaningful statements about hubs, bottlenecks, and the consequences of network rewiring.
 
-\section{Structure of the thesis}\label{sec:structure}
-
-Chapter~\ref{ch:literature} reviews the relevant literature and develops the theoretical framework.
-It introduces public transport as a spatial network \citep{barthelemy2011}, discusses hubs and bottlenecks as structural features linked to vulnerability and robustness \citep{derrible2010}, and connects the analysis to work on efficiency and service-pattern-based mobility networks \citep{gallotti2014}, including a brief positioning within the broader field of multimodal and multilayer transport networks \citep{alessandretti2022,artime2022}.
-The chapter then derives the research gap and clarifies how a medium-sized case such as Konstanz contributes to a literature that often focuses on larger systems \citep{cipriani2019}.
-
-Chapter~\ref{ch:data} describes the data and operationalisation.
-It explains how the two timetable versions are transformed into a harmonised stop set and how direct connections without transfers are defined to construct adjacency-based network snapshots for 2019 and 2025.
-
-Chapter~\ref{ch:methods} presents the methods.
-It details the construction of the networks, the computation of descriptive and centrality measures, and the comparison strategy used to classify connections as unchanged, newly gained, or removed between the two years.
-
-Chapter~\ref{ch:results} reports the results.
-It presents the network metrics for each timetable version, identifies hubs and bottlenecks, and shows where the largest gains and losses in transfer-free connectivity occur.
-
-Chapter~\ref{ch:discussion} discusses the findings in relation to the literature and practical relevance, and it addresses limitations stemming from the chosen representation and the scope of the analysis.
-
-Chapter~\ref{ch:conclusion} concludes by answering the research question and outlining possible extensions, including more time-sensitive representations, frequency weighting, or integration of additional modes where appropriate.
-
 % ═══════════════════════════════════════════════════════════════════════════════
 %  CHAPTER 2 — Literature review
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -221,33 +209,34 @@ Chapter~\ref{ch:conclusion} concludes by answering the research question and out
 
 \section{Public transport as a networked spatial system}\label{sec:network-system}
 
-A core idea of network analysis is that complex systems can be represented as graphs consisting of nodes and edges.
-In transport contexts, nodes commonly represent stops or stations, while edges represent some form of connectivity, such as physical links, scheduled services, or the ability to travel between two points within the system.
-This abstraction enables a systematic description of structure, including how connectivity is distributed, how concentrated or decentralised the system is, and which parts of the network constrain movement \citep{barthelemy2011}.
+A core idea of network analysis is that complex systems can be drawn as graphs made up of nodes (points) and edges (connections between them).
+In public transport, nodes typically represent stops or stations, and edges represent some form of link between them, for example a direct bus connection.
+This simple picture makes it possible to describe the structure of a transit system in a precise way: how many connections each stop has, whether the network is dominated by a few central hubs or spread out evenly, and where bottlenecks might exist \citep{barthelemy2011}.
 
-For public transport networks, the choice of representation is not merely technical, because it determines what the network measures mean.
-A representation that connects only consecutive stops captures the physical adjacency of the service pattern, while a representation that connects all stops that can be reached within the same vehicle captures transfer-free reachability.
-This representation is particularly relevant for questions of perceived convenience, since transfers are commonly associated with an additional perceived burden and can affect generalised cost beyond in-vehicle travel time \citep{iseki2009}.
+The way the network is drawn matters, because it determines what the resulting numbers actually mean.
+One option is to connect only stops that are next to each other along a bus route, which shows the physical layout of lines.
+Another option is to connect all stops that can be reached on the same bus without changing, which shows where passengers can travel directly.
+This second option is especially useful for studying convenience, because having to transfer between buses is widely seen as a significant inconvenience that makes a journey feel longer and less reliable \citep{iseki2009}.
 \citet{gallotti2014} show that timetable-based network representations can be used to study the efficiency of urban mobility, and they highlight that network structure matters for the detours and constraints travellers experience.
 This provides a direct motivation for focusing on transfer-free connectivity as an interpretable unit of analysis.
 
-Public transport networks can be represented in several standard network spaces, and each representation encodes a different operational meaning.
-In \textit{L}-space, edges connect consecutive stops along a route, so shortest paths reflect stop-to-stop progression along lines.
-In \pspace{}, two stops are connected if they are served by at least one common line, so shortest paths approximate transfer requirements rather than physical adjacency.
-A related bipartite representation, often called \textit{B}-space, connects stops to routes as two node types and allows projecting either a stop graph or a route graph depending on the research question.
-Because these representations can yield different values for clustering, path length, and hub prominence, stating the chosen space explicitly is essential for interpretation and comparability across studies \citep{shanmukhappa2019}.
+The literature distinguishes several standard ways of drawing a public transport network, each highlighting a different aspect of the system \citep{shanmukhappa2019}.
+In \textit{L}-space, edges connect only consecutive stops along a route, so the graph mirrors the physical route layout.
+In \pspace{}, two stops are connected whenever they are served by at least one common bus line, regardless of how far apart they are on that line.
+Here, the shortest path between two stops tells you how many times you need to change buses rather than how many stops you pass through.
+A third option, sometimes called \textit{B}-space, links stops to the routes that serve them and can be used to study either the stop network or the route network.
+Because these different representations can produce very different numbers for the same city, it is important to state which one is being used.
 
-This thesis uses a \pspace{} stop graph to operationalise transfer-free connectivity, where an edge indicates that two stops are jointly served by at least one line.
-In this representation, graph distance is interpretable in behavioural terms.
-A path length of~1 corresponds to a trip with zero transfers, and a path length of~$d$ corresponds to approximately $d-1$ transfers under the simplifying assumption that each edge can be traversed by staying on a single line.
-A known consequence of \pspace{} is clique-like densification induced by multi-stop routes, which increases clustering and can compress diameters relative to \textit{L}-space.
-The implication is that network statistics should be interpreted as transfer structure rather than as street-level adjacency or geometric proximity \citep{shanmukhappa2019,zhang2025}.
+This thesis uses a \pspace{} stop graph.
+An edge between two stops means that at least one bus line serves both of them, so a passenger can travel between them without changing buses.
+In this representation, distances have a straightforward meaning: a path of length~1 means no transfer is needed, a path of length~2 means one transfer, and so on.
+One side effect of this construction is that a single long bus line creates connections between all of its stops at once, which makes the graph very dense and produces short distances.
+For example, if one line serves 20~stops, all $\binom{20}{2} = 190$ pairs become directly connected.
+This means that the numbers from a \pspace{} graph should not be read as physical distances or street proximity, but specifically as a picture of the transfer structure of the network \citep{shanmukhappa2019,zhang2025}.
 
-In addition, public transport systems are often described as multimodal networks, because multiple services and modes collectively shape mobility.
-Research on multimodal and multilayer transport networks emphasises that modes can be conceptualised as layers linked through interchange points, and that interdependencies across layers can matter for performance and vulnerability \citep{alessandretti2022,artime2022}.
-In practice, however, a thesis must balance theoretical richness with feasibility.
-The present study therefore adopts a deliberately simplified approach that focuses on the bus network of Konstanz.
-It remains conceptually aligned with multimodal perspectives by treating the network as a service-based mobility system and by emphasising the role of transfer-free connectivity, but it does not implement a full multilayer modelling framework.
+In reality, most cities offer several types of transport, such as buses, trains, and ferries, that together form a multimodal system.
+Research on such systems often models each mode as a separate layer, with transfer points connecting the layers \citep{alessandretti2022,artime2022}.
+This thesis focuses only on the bus network of Konstanz and does not build a full multimodal model, but it borrows the core idea from that literature: what matters for passengers is not just individual routes, but how the pieces of the system connect to allow complete journeys.
 
 \section{How network analysis is applied in public transport research}\label{sec:applications}
 
@@ -260,16 +249,13 @@ For example, \citet{derrible2010} analyse 33~metro networks worldwide using degr
 Such benchmarking studies help planners understand where a given system stands relative to peers and what structural trade-offs it embodies, for instance whether a network prioritises directness over coverage, or whether connectivity is concentrated around a small number of interchange nodes.
 
 A second application area is \emph{vulnerability and disruption analysis}.
-Network analysis provides a structured way to ask what happens when parts of a transit system fail.
-By simulating the removal of stops, stations, or entire lines and measuring how connectivity degrades, researchers can identify critical points whose failure would disproportionately affect the rest of the system.
-\citet{albert2000} demonstrate this logic for complex networks in general, showing that scale-free networks are robust to random failures but fragile under targeted attack on hubs.
-In the transit context, this translates into practical questions: which stations, if closed for construction or disrupted by an event, would cause the largest increase in travel time or the largest loss of reachable destinations?
-Studies applying this approach have informed infrastructure prioritisation and contingency planning in cities ranging from large metro systems to regional bus networks \citep{derrible2010,cicchini2024}.
+By simulating the removal of stops or lines and measuring how connectivity degrades, researchers can identify critical points whose failure would disproportionately affect the system \citep{albert2000,derrible2010,cicchini2024}.
+Section~\ref{sec:bottlenecks} discusses the underlying robustness concepts in more detail.
 
 A third application concerns \emph{service change evaluation}.
 When transit agencies redesign routes, add new lines, or restructure timetables, network analysis offers a before-and-after framework to quantify what changed structurally.
 Rather than relying solely on ridership data, which may take months to stabilise after a reform, network metrics can immediately describe whether a redesign increased or decreased connectivity, whether it shifted the hub hierarchy, and which areas gained or lost direct accessibility.
-\citet{cats2017} demonstrate this approach by analysing a major bus-network redesign in Stockholm, showing that topological indicators can capture structural effects of service reforms that are not immediately visible in aggregate ridership figures.
+\citet{cats2017} demonstrates this approach by analysing the long-term topological evolution of Stockholm's metropolitan rail network, showing that network indicators can capture structural effects of infrastructure changes that are not immediately visible in aggregate ridership figures.
 This diagnostic use is particularly relevant for the present thesis, which applies exactly this logic to the Konstanz timetable change between 2019 and 2025.
 
 A fourth area is \emph{accessibility and equity assessment}.
@@ -295,73 +281,64 @@ In summary, network analysis serves public transport research as a versatile dia
 It is used to benchmark systems, identify vulnerabilities, evaluate reforms, assess spatial equity, inform design, and track change over time.
 The present thesis draws primarily on the vulnerability, service-change evaluation, and temporal-comparison applications, while using the same structural metrics that underpin benchmarking and design research.
 
-\section{Network structure, hubs, and centrality}\label{sec:hubs-centrality}
+\section{Network structure, hubs, and robustness}\label{sec:hubs-centrality}
 
-Within network analysis, hubs are typically understood as nodes that are structurally important because they connect many other nodes, or because they lie on a large share of shortest paths.
-Centrality measures provide operational definitions of such importance.
-Degree centrality captures how many direct connections a node has.
-Betweenness centrality captures how frequently a node lies on shortest paths between other nodes, which often indicates that the node channels movement through the system.
-Closeness centrality captures how near a node is to all others in terms of shortest-path distance, which can be interpreted as a measure of overall accessibility from that node to the rest of the network \citep{barthelemy2011}.
+Hubs are stops that play an outsized role in connecting the network.
+Network analysis identifies them using centrality measures, each of which captures a different aspect of importance \citep{barthelemy2011}.
+\emph{Degree centrality} simply counts how many direct connections a stop has.
+A stop with high degree can be reached from many other stops without a transfer.
+\emph{Betweenness centrality} measures how often a stop appears on the shortest paths between other stops.
+A stop with high betweenness acts as a bridge or bottleneck: many journeys pass through it, so disrupting it would force detours.
+\emph{Closeness centrality} measures how close a stop is to all other stops in terms of path length.
+A stop with high closeness can reach the rest of the network with few transfers, making it a well-connected location overall.
 
-In a \pspace{} transfer-free reachability graph, standard centrality measures are explicitly service-oriented.
-Degree captures how many other stops can be reached without a transfer, which reflects the breadth of direct access provided by overlapping lines at a stop.
-Betweenness highlights transfer mediation, because high-betweenness nodes lie on many shortest paths that correspond to low-transfer itineraries.
-Closeness reflects how quickly a stop can reach the rest of the system in terms of transfers, which aligns with transfer friction as a key component of perceived travel cost.
-This interpretation clarifies why centrality is informative in the present setting, while also keeping the distinction between structural importance and passenger volume explicit \citep{shanmukhappa2019,derrible2010}.
+In the \pspace{} graph used here, these measures have a concrete meaning for passengers.
+Degree tells you how many other stops you can reach without changing buses.
+Betweenness tells you which stops serve as key transfer points, because the shortest paths in the graph correspond to journeys with the fewest bus changes.
+Closeness tells you which stops are most easily reachable from everywhere in the network.
+Importantly, high centrality does not automatically mean many passengers use that stop; it means the stop is structurally important for the network's connectivity \citep{shanmukhappa2019,derrible2010}.
 
-Recent evidence suggests that structurally central stops often, though not always, correspond to higher passenger demand, especially when frequency-weighted representations are used.
-This does not imply that centrality is a substitute for demand data, but it supports using centrality rankings as a defensible way to identify candidate critical stops when detailed boarding counts are unavailable.
-In this thesis, the robustness scenarios therefore treat top-ranked centrality nodes as plausible points of vulnerability, while interpreting results as structural vulnerability rather than as direct statements about ridership impacts \citep{sfiligoj2025}.
+Recent research shows that stops with high centrality scores also tend to have higher passenger numbers, although the match is not perfect \citep{sfiligoj2025}.
+This makes centrality a reasonable way to identify which stops are likely to matter most, even when detailed passenger counts are not available.
+In this thesis, the robustness simulations therefore target the highest-ranked stops as plausible weak points, while keeping in mind that structural importance and actual passenger volumes are related but not identical.
 
-A further implication is that hub structure may be relatively stable even when schedules change.
-If the built environment and major demand anchors remain similar, certain central stops may retain their structural role across timetable revisions.
-At the same time, local rewiring can create new hubs at secondary nodes or reduce the importance of previously central ones.
-This motivates an explicit comparison across timetable versions.
+An important expectation is that the most central stops are likely to stay important even when timetables change, because they often correspond to major physical locations such as the main train station or a central square.
+At the same time, smaller shifts in bus routes can promote some stops and demote others.
+Comparing hub rankings across the two timetable versions therefore shows whether the core of the network is stable or whether the restructuring reshuffled the hierarchy.
 
-\section{Bottlenecks, constraints, and robustness}\label{sec:bottlenecks}
+\paragraph{Bottlenecks and robustness.}\label{sec:bottlenecks}
+Bottlenecks are stops whose failure would cause the most damage to the network.
+If removing a single stop disconnects entire neighbourhoods or forces long detours, that stop is a bottleneck.
+Typically, bottlenecks have high betweenness centrality, because they sit between groups of stops that have few other ways to connect \citep{derrible2010}.
+In public transport, a disrupted bottleneck can create knock-on problems: passengers must reroute through alternative stops that may be overcrowded or require additional transfers.
 
-Bottlenecks can be understood as nodes or edges whose removal would strongly disrupt connectivity, either by disconnecting parts of the network or by forcing large detours.
-In network terms, bottlenecks are often associated with high betweenness and bridge-like positions between otherwise dense subnetworks.
-A system that routes many shortest paths through a small number of nodes is structurally more concentrated and may be less robust to targeted disruptions \citep{derrible2010}.
-This is especially relevant for public transport, where disruptions at key nodes can have cascading effects because passengers are re-routed to alternative services that may have limited capacity or may require additional transfers.
+Robustness is typically studied by removing stops one by one and observing how quickly the network falls apart.
+Two scenarios are common: \emph{random failure}, where stops are removed at random (simulating everyday breakdowns), and \emph{targeted attack}, where the most central stops are removed first (simulating a worst-case scenario).
+A well-known finding across many types of networks is that targeted attacks are far more damaging than random failures, because removing a few important hubs can fragment the entire system \citep{albert2000}.
+In public transport, the key question is whether the network still holds together after losing its most connected stops, or whether large parts become unreachable \citep{derrible2010}.
 
-Robustness in networked systems is commonly studied by simulating disruptions and measuring how connectivity and efficiency degrade as nodes or edges are removed.
-A standard distinction is between \emph{random failures}, which approximate uncorrelated local outages, and \emph{targeted attacks}, which remove the most central elements first and therefore test the system's dependence on hubs.
-Across many complex networks, targeted removal fragments connectivity much faster than random failure, which makes hub identification central to vulnerability assessment \citep{albert2000}.
-In public transport networks, this logic is often applied to stops as nodes and service connections as edges, with the largest connected component used as an indicator of whether a large share of the network remains mutually reachable \citep{derrible2010}.
-
-Public transport disruptions can also act on routes as operational units rather than on single stops, and robustness depends on the extent to which passengers can reroute across overlapping services.
-Route-based attack scenarios can reveal vulnerabilities that stop-based removal understates, especially in networks where many stops remain connected but redundancy collapses when entire lines are lost \citep{cicchini2024}.
-In addition, multilayer and flow-based approaches show that structural robustness can diverge from functional robustness when passenger loads and transfer coupling drive cascading effects.
-This motivates interpreting the stop-removal robustness analysis in this thesis as a structural baseline that is suitable for year comparison, while acknowledging that operational impacts could be stronger under route- or flow-based failure mechanisms \citep{hu2025}.
+In practice, disruptions often affect entire bus lines rather than single stops, for example when a road is closed.
+Removing a complete line can be more damaging than removing individual stops, because it eliminates all the connections that line provided at once \citep{cicchini2024}.
+Moreover, the actual impact on passengers can be worse than what a purely structural analysis suggests, because overcrowding and cascading delays add further problems \citep{hu2025}.
+The robustness analysis in this thesis uses stop-level removal as a structural baseline that is suitable for comparing the two timetable versions, while acknowledging that real-world disruptions may be more complex.
 
 \section{Efficiency and transfer-free connectivity}\label{sec:efficiency}
 
-Efficiency in public transport can be defined in many ways, including travel time, waiting time, number of transfers, or the detour relative to a straight-line route.
-Even without modelling timetable frequencies or passenger demand, network structure can provide an analytically meaningful proxy for certain components of efficiency, particularly those related to transfers and detours.
-\citet{gallotti2014} emphasise that the structure of multimodal mobility influences how efficiently travellers can navigate a city.
-Building on this idea, the present thesis operationalises a simple and transparent concept of efficiency as transfer-free reachability.
-Two stops are considered directly connected if a traveller can remain on the same bus service pattern to travel between them.
-This yields an adjacency matrix of connections without transfers.
+Efficiency in public transport can mean many things: short travel times, few transfers, minimal waiting, or direct routes without detours.
+This thesis focuses on one specific and easily measurable aspect: whether two stops can be reached without changing buses.
+\citet{gallotti2014} show that the structure of a transit network strongly influences how conveniently people can move through a city.
+Following this idea, two stops are treated as directly connected if a passenger can travel between them by staying on a single bus.
+The result is a simple map of which stop pairs offer transfer-free travel and which ones require at least one change.
 
-This representation makes the analysis interpretable, but it also implies certain limitations that are theoretically important to acknowledge.
-The measure does not distinguish frequent connections from rare ones, and it does not capture time-dependent waiting costs.
-It captures whether a transfer is necessary at all, not whether travel is fast or reliable.
-Theoretically, this positions the measure closer to a structural accessibility concept, rather than a full generalised cost measure.
-\citet{alessandretti2022} and \citet{artime2022} discuss how multimodal mobility research often emphasises richer representations, including layered structures and temporal dynamics.
-The present thesis can therefore be viewed as a constrained but policy-relevant special case, in which transfer-free connectivity is treated as a central structural feature.
+This approach is easy to interpret, but it has clear limitations.
+It does not distinguish a bus that runs every ten minutes from one that runs once an hour, and it ignores waiting times and travel duration.
+What it captures is strictly whether a transfer is needed or not.
+This makes it a measure of structural accessibility rather than a complete picture of how good a connection actually is in everyday use.
 
-Transfer-free connectivity captures one dimension of service quality, but robustness and user experience also depend on redundancy, meaning the availability of multiple distinct ways to travel between origins and destinations.
-A complementary concept is route diversity, which quantifies how many genuinely different itineraries exist and therefore how much flexibility passengers have when services or infrastructure are disrupted.
-Framing transfer-focused connectivity alongside route diversity clarifies that structural improvements can arise either from more direct connections or from more diverse alternative paths, which provides a theoretical bridge between the metrics used here and broader planning goals related to resilience and reliability \citep{li2024}.
-
-\section{The relevance of small and medium-sized city contexts}\label{sec:small-cities}
-
-A further reason to study Konstanz is that public transport systems in small and medium-sized cities face design constraints that differ from those in large metropolitan contexts.
-Service coverage, demand density, and operational resources shape feasible network designs, and limited redundancy can increase dependence on specific corridors or nodes.
-Transit network design research for small and medium-sized cities highlights that planning often involves trade-offs under constraints, for example between coverage and directness, or between simplicity and connectivity \citep{cipriani2019}.
-While the present thesis does not perform network design optimisation, it uses a similar lens to interpret structural outcomes.
-In particular, if redundancy is limited, timetable changes may alter who benefits from transfer-free connectivity and where the network becomes more or less concentrated around key hubs.
+Transfer-free connectivity is only one piece of the puzzle.
+Another important factor is whether passengers have alternative routes available, so that a disruption on one line does not leave them stranded.
+This idea is called route diversity: the more genuinely different ways to get from A to B, the more resilient the network is \citep{li2024}.
+The present thesis focuses on transfer-free connections rather than route diversity, but both concepts point in the same direction: a good network offers not just direct connections, but also fallback options.
 
 \section{Research gap, contribution, and analytical expectations}\label{sec:research-gap}
 
@@ -382,7 +359,7 @@ They function as theory-informed lenses that connect the descriptive comparison 
 % ═══════════════════════════════════════════════════════════════════════════════
 \chapter{Data and operationalisation}\label{ch:data}
 
-\section{Case and scope of the network}\label{sec:case}
+\section{Case, data sources, and digitisation}\label{sec:case}
 
 This thesis analyses the public bus network serving the city of Konstanz and its directly connected districts and nearby localities that are part of the regular Stadtbus service area, including Wollmatingen, Dettingen, Wallhausen, Dingelsdorf, Oberdorf, Litzelstetten, and Mainau.
 The analysis focuses on standard weekday operations.
@@ -392,8 +369,6 @@ The purpose of these scope decisions is to keep the network representation compa
 The empirical design is a before-and-after comparison between two timetable versions, one representing 2019 and one representing 2025.
 The independent variable is the timetable version.
 All network outcomes are computed separately for each year and then compared.
-
-\section{Data sources and digitisation}\label{sec:data-sources}
 
 The underlying data were manually extracted from the official printed timetable booklet used for the Konstanz bus network, commonly referred to as the \emph{Roter Arnold} timetable.
 The timetable booklet is published by Stadtwerke Konstanz and is also made available as downloadable PDF timetables \citep{stadtwerke2019,stadtwerke2025}.
@@ -409,47 +384,16 @@ The raw data were collected as ordered stop sequences for each bus line in the s
 The R script then transforms these sequences into a transfer-free connectivity network in which two stops are connected if they are served by the same line, meaning they are reachable without changing buses.
 Importantly, this transfer-free representation is not limited to neighbouring stops in the timetable order, but connects any two stops that co-occur on at least one line pattern.
 
-Because the timetable information was digitised manually, basic plausibility checks were applied.
-The validation steps are described in Section~\ref{sec:plausibility}.
+Because the timetable information was digitised manually, basic plausibility checks were applied to verify stop-sequence coherence and line-identifier consistency (see Section~\ref{sec:approach}).
 
-\section{Harmonising stop names and ensuring comparability}\label{sec:harmonising}
+\section{Harmonisation and dataset summary}\label{sec:harmonising}
 
 Stop names were harmonised across 2019 and 2025 to ensure that the same physical stop is represented by a consistent label.
-The harmonisation procedure is described in Section~\ref{sec:harmonising-method}.
 Year-to-year comparisons of pair-level change focus on the intersection of stops present in both years, as specified in Section~\ref{sec:pair-connectivity}.
 
 The datasets also differ in their set of active lines.
 In particular, line~9C exists in 2019 but not in 2025, reflecting a real service change.
 This difference is treated as part of the timetable change captured by the independent variable rather than as a comparability problem.
-
-\section{Constructing the transfer-free connectivity network}\label{sec:network-construction-data}
-
-\subsection{Node definition}\label{sec:node-def-data}
-
-Nodes are defined as bus stops.
-Each unique harmonised stop name corresponds to one node in the network.
-
-\subsection{Defining a connection without transfers}\label{sec:connection-def-data}
-
-To analyse the Konstanz bus network in a way that is comparable across timetable versions, this study requires a clear operational definition of what constitutes a connection between two stops when transfers are excluded.
-The analysis therefore focuses on transfer-free reachability, which captures whether two stops can be linked within the selected timetable snapshot without changing buses.
-The formal network definition and construction rules used throughout the thesis are specified in Section~\ref{sec:transfer-free-def}.
-In this representation, path length can be interpreted in terms of the minimum number of transfers required between stops.
-
-\subsection{From stop sequences to an adjacency matrix}\label{sec:adj-matrix-data}
-
-The digitised CSV files store adjacent stop pairs per line as an intermediate representation.
-These sequences are converted into a binary stop-by-stop adjacency matrix as described in Section~\ref{sec:adj-matrix-construction}.
-Although the CSV files list only consecutive stop pairs, they are used only as an intermediate representation to recover each line's served stop set.
-The analytic network is then constructed as a transfer-free reachability graph: for each line, all stops served by that line are treated as mutually connected, so each line induces a complete subgraph over its stops (a clique).
-As a consequence, density and clustering are expected to be higher than in a pure ``physical adjacency'' representation.
-
-\section{Variables and outcomes}\label{sec:variables}
-
-The independent variable is the timetable version (2019 vs.\ 2025).
-Network outcomes at the pair, node, and global level are defined and operationalised in Section~\ref{sec:network-measures}.
-
-\section{Summary of the analytic datasets}\label{sec:data-summary}
 
 The digitised datasets represent two comparable network snapshots.
 The 2019 network contains 107 stops, and the 2025 network contains 108 stops in the harmonised representation used for analysis.
@@ -461,14 +405,7 @@ The year-to-year comparison therefore focuses on changes in connectivity pattern
 % ═══════════════════════════════════════════════════════════════════════════════
 \chapter{Methods}\label{ch:methods}
 
-\section{Analytical approach and software}\label{sec:approach}
-
-The analysis follows a comparative network-analytic design.
-Two network snapshots of the Konstanz bus system are constructed from manually digitised timetable information, one representing 2019 and one representing 2025.
-All measures are computed separately for each snapshot and then compared.
-The independent variable is the timetable version.
-The dependent variables are structural properties of the resulting networks, including pair-level connectivity without transfers, node-level indicators of hub and bottleneck prominence, and global measures of connectivity and clustering.
-This approach builds on established uses of network analysis for transport systems and on the interpretation of centrality and robustness concepts in transit networks \citep{barthelemy2011,derrible2010}.
+\section{Analytical approach and preprocessing}\label{sec:approach}
 
 All analyses were conducted in R \citep{rcore2025}.
 Network construction, centrality measures, clustering, and shortest-path-based metrics were computed using standard graph routines.
@@ -476,26 +413,8 @@ In addition, permutation-based inference was used for node-level regression mode
 This approach avoids relying on classical OLS $p$-values, which can be misleading for network-derived outcomes.
 Visualisations were generated with common plotting functions for matrix-style and network summary plots.
 
-\section{Preprocessing, scope filters, and data validation}\label{sec:preprocessing}
-
-\subsection{Scope filters}\label{sec:scope-filters}
-
-To ensure comparability across years and to keep the analysis feasible, the datasets are restricted to a typical weekday service situation under normal operations.
-Services that operate only at night or only on weekends were excluded, as were cross-border services towards Switzerland and the City Shuttle.
-The geographic scope includes the core Konstanz service area and the regular lines connecting Konstanz to nearby localities that are part of the everyday network.
-This scope definition is applied consistently to 2019 and 2025.
-
-\subsection{Harmonising stop names}\label{sec:harmonising-method}
-
-Stop names were standardised across the two datasets so that the same physical stop is represented by one consistent label in 2019 and 2025.
-This harmonisation addresses spelling differences and known stop renamings.
-The goal is to ensure that year-to-year differences in network measures reflect substantive timetable change rather than inconsistent naming.
-
-\subsection{Basic plausibility checks}\label{sec:plausibility}
-
-Because the timetable information was digitised manually, simple checks were used to detect transcription errors.
-These checks verified that each line's extracted stop order forms a coherent sequence, that line identifiers are consistent, and that the stop set does not contain unintended duplicates created by formatting differences.
-In addition, connectivity checks were run after network construction to confirm that the resulting network does not contain isolated nodes produced by data-entry mistakes.
+Scope filters and stop-name harmonisation were applied as described in Chapter~\ref{ch:data}.
+Because the timetable information was digitised manually, plausibility checks were used to verify that stop sequences are coherent, line identifiers are consistent, and that no isolated nodes are produced by data-entry mistakes.
 
 \section{Network construction}\label{sec:construction}
 
@@ -542,8 +461,7 @@ A connection is coded as present if the stop pair is connected without transfers
 This choice treats transfer-free connectivity as a symmetric relationship between stops and simplifies interpretation of the adjacency matrix as a binary map of direct reachability.
 The main limitation of this choice is that it abstracts away from direction-specific stop patterns that can occur in practice.
 This trade-off is accepted because the thesis focuses on structural comparison at the network level and aims for an interpretable measure of direct connectivity.
-Direction-specific stop patterns can exist in practice.
-This thesis treats them as a limitation of the undirected abstraction and addresses the implication in the limitations and outlook sections.
+The implication is addressed in the limitations and outlook sections.
 
 \section{Network measures and operationalisation}\label{sec:network-measures}
 
@@ -623,7 +541,7 @@ Using $p = (1 + \text{count})/(B + 1)$ rather than $\text{count}/B$ follows the 
 $R^{2}$ is reported descriptively as a measure of bivariate fit.
 Statistical inference is based on the permutation $p$-values rather than on classical regression assumptions.
 
-\section{Comparative strategy and winners-and-losers analysis}\label{sec:comparative}
+\section{Comparative strategy and robustness simulations}\label{sec:comparative}
 
 The year-to-year comparison is conducted at three complementary levels.
 
@@ -635,8 +553,6 @@ Changes in rank and in centrality values indicate whether the timetable revision
 Third, a winners-and-losers analysis is performed at the stop level based on the gained and lost connections.
 For each stop, the number of gained direct connections and the number of lost direct connections are computed, and the net change is defined as gained minus lost.
 This produces an interpretable summary of which stops gained transfer-free reachability to additional destinations and which stops lost it.
-
-\section{Robustness analysis (node-removal simulations)}\label{sec:robustness-method}
 
 Robustness is assessed through node-removal simulations, following the common logic of testing how strongly network structure depends on a small set of central elements \citep{derrible2010}.
 The simulations are performed on the undirected transfer-free reachability graphs for 2019 and 2025.
@@ -692,7 +608,7 @@ In both years, there are no isolated stops, and the network forms a single conne
 Connectivity increases slightly from 2019 to 2025.
 The number of undirected connections rises from 1,746 in 2019 to 1,834 in 2025, which is an increase of 88 connections, about 5.0~percent relative to 2019.
 Network density also increases from 0.3079 to 0.3174.
-Average degree rises from 32.64 to 33.96, indicating that, on average, each stop is directly connected without transfers to about 1.33 additional stops in 2025 compared to 2019.
+Average degree rises from 32.64 to 33.96, indicating that, on average, each stop is directly connected without transfers to about 1.32 additional stops in 2025 compared to 2019.
 
 The shortest-path-based metrics change only marginally but consistently in the direction of slightly easier reachability.
 The network diameter remains constant at~3 in both years.
@@ -752,7 +668,7 @@ For all tested relationships, permutation $p$-values reach the minimum attainabl
   \end{tabular}
 \end{table}
 
-\section{Changes in transfer-free connectivity between 2019 and 2025}\label{sec:connectivity-changes}
+\section{Connectivity changes and winners-and-losers}\label{sec:connectivity-changes}
 
 To isolate structural rewiring from stop additions and removals, the connection-pair analysis focuses on the 104 stops that exist in both years.
 Within this common stop set, the number of connections increases from 1,688 in 2019 to 1,744 in 2025.
@@ -766,8 +682,6 @@ The network becomes slightly more connected overall, yet this net increase masks
 Examples of newly present connections involve several pairs linked to Staad/Autof\"{a}hre, as well as new direct connections between Allmannsdorf and stops such as Friedhof, Bismarcksteig, and Bodan/Riedstra\ss{}e.
 Examples of removed connections also frequently involve Staad/Autof\"{a}hre, including pairs such as Staad/Autof\"{a}hre with Universit\"{a}t and with Jacob-Burckhardt-Stra\ss{}e.
 This suggests that changes affecting Staad/Autof\"{a}hre play an important role in the rewiring pattern between 2019 and 2025.
-
-\section{Winners and losers at the stop level}\label{sec:winners-losers}
 
 The winners-and-losers analysis summarises how each stop's set of direct destinations changes.
 For each stop, the net change is computed as gained direct connections minus lost direct connections.
@@ -841,7 +755,7 @@ In 2019, average efficiency at 20~percent removal is 0.6522, which corresponds t
 In 2025, average efficiency at 20~percent removal is 0.6579, which rounds to 100.0~percent of the baseline.
 Overall, the robustness simulations suggest slightly higher robustness in 2025, although the differences are small in absolute terms, which is consistent with the generally dense transfer-free adjacency representation.
 
-\section{Stop additions and removals}\label{sec:stop-changes}
+\section{Stop changes and summary of findings}\label{sec:stop-changes}
 
 In addition to changes among common stops, the stop set itself changes slightly.
 Three stops present in 2019 are not present in the 2025 dataset: Lutherplatz, Tenbrinkstra\ss{}e, and Sonnenb\"{u}hlstra\ss{}e/Tannenhof.
@@ -851,9 +765,7 @@ These changes likely reflect a combination of service restructuring and stop-lev
 Because stop names were harmonised across years, these additions and removals are interpreted as substantive differences rather than naming artefacts.
 The year-to-year comparison therefore captures both rewiring among common stops and small changes in network coverage through stop additions and removals.
 
-\section{Summary of main findings}\label{sec:results-summary}
-
-The results show a slightly denser and more clustered transfer-free reachability network in 2025 compared to 2019, with marginally shorter average shortest paths and a stable overall diameter.
+Overall, the results show a slightly denser and more clustered transfer-free reachability network in 2025 compared to 2019, with marginally shorter average shortest paths and a stable overall diameter.
 The most central hubs and bottlenecks remain largely unchanged at the very top, indicating structural stability of the network core.
 At the same time, a sizable set of stop pairs gains direct transfer-free connectivity while another set loses it, and most stops experience non-zero changes in their direct reachability.
 This combination of stability at the core and rewiring in the periphery suggests that the timetable change between 2019 and 2025 produces meaningful redistribution of direct connectivity rather than a fundamental transformation of the network's central skeleton.
@@ -865,16 +777,11 @@ This combination of stability at the core and rewiring in the periphery suggests
 
 \section{Interpreting the structural change from 2019 to 2025}\label{sec:interp}
 
-The comparison of the 2019 and 2025 timetable versions shows a combination of stability in the network core and noticeable rewiring in transfer-free connectivity.
-On the one hand, global connectivity increases slightly.
-The 2025 network has more transfer-free stop pairs, higher density, and higher clustering, alongside a marginally shorter average shortest path length.
-On the other hand, the pair-level comparison reveals that this net increase is produced by substantial offsetting change.
-A large set of connections is newly gained while another set is removed, and most stops experience non-zero net changes.
+The comparison shows a combination of stability in the network core and noticeable rewiring in transfer-free connectivity.
+Global connectivity increases slightly in 2025, but this net increase is produced by substantial offsetting change: many connections are newly gained while others are removed.
 
-From a network-theoretical perspective, this pattern fits well with the idea that transport systems often exhibit stable structural backbones shaped by enduring spatial and functional constraints, while still allowing meaningful reconfiguration at the periphery or along secondary corridors \citep{barthelemy2011}.
-In Konstanz, the identity of the most central nodes remains highly stable across 2019 and 2025.
-Bahnhof, Konzilstr./Theater, Sternenplatz, and Z\"{a}hringerplatz remain the dominant hubs and also the dominant bottlenecks when bottlenecks are interpreted through betweenness centrality.
-This is consistent with the expectation that nodes associated with the main interchange area and the city centre continue to channel movement even when timetables change.
+From a network-theoretical perspective, this fits the idea that transport systems exhibit stable structural backbones shaped by spatial and functional constraints, while still allowing reconfiguration at the periphery \citep{barthelemy2011}.
+In Konstanz, Bahnhof, Konzilstr./Theater, Sternenplatz, and Z\"{a}hringerplatz remain the dominant hubs and bottlenecks in both years, consistent with the expectation that central interchange nodes continue to channel movement even when timetables change.
 
 At the same time, secondary centrality shifts and the winners-and-losers analysis indicates redistribution.
 Stops such as Bodan/Riedstra\ss{}e, Friedhof, and Bismarcksteig gain many new direct connections, while others such as Universit\"{a}t and Jacob-Burckhardt-Stra\ss{}e lose direct connectivity.
@@ -885,23 +792,6 @@ This is consistent with the robustness simulations.
 The maximum single-node efficiency loss decreases slightly from 0.98~percent in 2019 to 0.97~percent in 2025, and the network withstands targeted hub removal for longer in 2025, reaching the 50~percent largest connected component threshold after removing 26~percent of nodes compared to 20~percent in 2019.
 These differences are modest, but together they support the interpretation of a small reduction in dependence on the most central intermediaries.
 At the same time, the robustness results should be interpreted as structural robustness in the transfer-based topological model, not as resilience to physical infrastructure disruptions.
-
-\section{Hubs, bottlenecks, and what they mean in a transfer-based representation}\label{sec:hub-meaning}
-
-This thesis operationalises a connection as transfer-free reachability.
-As a result, hub status in this network is closely tied to the everyday experience of having many destinations reachable without changing buses.
-Degree centrality is therefore directly interpretable as the number of direct destinations from a stop.
-Betweenness centrality, computed on shortest paths in this binary network, is interpretable as transfer-based mediation.
-Stops with high betweenness lie on many minimal-transfer paths, which aligns with an intuitive understanding of bottlenecks in a network where transfers are costly \citep{derrible2010}.
-
-This representation connects to the literature on efficiency in timetable-based public transport networks.
-\citet{gallotti2014} emphasise that network structure shapes detours and constraints in urban mobility.
-Even without modelling travel times and service frequencies, the transfer-free connectivity network captures an important dimension of perceived convenience, because transfers are widely discussed as carrying an additional perceived burden for passengers \citep{iseki2009}.
-The results suggest that the 2025 timetable slightly expands the possibility space of transfer-free travel overall, but the distribution of that benefit is uneven.
-
-The prominence of a few central nodes in both years also aligns with broader insights on spatial networks, where geography and the organisation of urban functions often create highly central nodes that persist across time \citep{barthelemy2011}.
-Konstanz appears to follow this pattern.
-The main hubs remain stable, and changes are more pronounced in the surrounding structure.
 
 \section{Practical implications and trade-offs}\label{sec:practical}
 
@@ -916,15 +806,11 @@ This does not automatically mean that access to the university worsened in a bro
 A stop can lose direct connections while still remaining well served through one transfer.
 Because transfers are often perceived as inconvenient, an increase in required transfers can matter for experienced service quality even when overall connectivity remains high \citep{iseki2009}.
 
-This is an example of a broader trade-off typical for public transport planning in small and medium-sized cities.
-Limited resources and limited redundancy can lead to designs that improve some direct connections at the expense of others, or that simplify lines and reduce coverage of certain direct links while maintaining overall connectivity through transfers \citep{cipriani2019}.
-In that sense, the Konstanz comparison can be read as a concrete illustration of how structural constraints and planning decisions manifest in network metrics and transfer-free reachability.
+This illustrates a broader trade-off in public transport planning: limited resources can lead to designs that improve some direct connections at the expense of others \citep{cipriani2019}.
+The repeated appearance of Staad/Autof\"{a}hre in both gained and removed pairs suggests that the revision reorganised connectivity around specific corridors.
+The adjacency-based approach can therefore serve as a transparent communication tool, allowing planners to point to concrete stop pairs where transfer-free travel was gained or lost.
 
-The repeated appearance of Staad/Autof\"{a}hre in both gained and removed example pairs also suggests that the timetable revision may have reorganised connectivity around specific corridors or destinations.
-Even when overall connectivity improves, a reconfiguration can create pronounced local changes that are highly visible to affected users.
-The adjacency-based approach used here can therefore serve as a transparent tool for communication, because it allows planners or stakeholders to point to concrete pairs and concrete stops where transfer-free travel was gained or lost, without claiming to fully evaluate service quality.
-
-\section{Limitations}\label{sec:limitations}
+\section{Limitations and future research}\label{sec:limitations}
 
 Several limitations follow directly from the design choices that make the analysis feasible and interpretable.
 
@@ -938,10 +824,7 @@ This is consistent with the scope definition, but it implies that the results do
 Multilayer and multimodal research shows that integrating modes can change conclusions about accessibility and vulnerability \citep{alessandretti2022}.
 The findings should therefore be interpreted as statements about the bus network snapshot, not about the entire mobility system.
 
-In addition, the robustness simulations treat node failures as independent events in an abstract topological network.
-In reality, bus services share physical infrastructure such as bridges and arterial roads.
-Failure of such infrastructure can induce correlated multi-stop and multi-route disruptions that are not captured by independent node removal.
-A more complete resilience analysis would require an explicit spatial or route-based representation that links stops and lines to shared infrastructure elements, which is beyond the scope of this study.
+In addition, the robustness simulations treat node failures as independent events, whereas real disruptions often affect shared infrastructure such as bridges, inducing correlated failures not captured here.
 
 Third, the adjacency definition treats all stop pairs served by the same line as directly connected and models the resulting relation as undirected.
 This captures mutual transfer-free connectivity at the level of whether a direct ride is possible, but it abstracts from direction-specific stop patterns and from the possibility that some services do not serve all stops equally in both directions.
@@ -953,78 +836,36 @@ As a result, the measures capture the existence of transfer-free options rather 
 This matters because a rare direct ride might be less useful than a frequent one-transfer alternative.
 The analysis therefore addresses structural connectivity and transfer requirements, not generalised travel cost.
 
-Fifth, the datasets were manually digitised.
-Although plausibility checks and harmonisation were applied, manual transcription can introduce error.
-This limitation is partly offset by the interpretability of the pipeline and by the fact that the key results are pattern-based and would require systematic errors to change qualitatively.
+Fifth, manual digitisation can introduce transcription errors, although the pattern-based results would require systematic errors to change qualitatively.
+Finally, the before-and-after design does not establish causality, because many contextual factors changed between 2019 and 2025.
+The analysis supports descriptive interpretation of structural change rather than causal claims about policy effectiveness.
 
-Finally, the before--after design does not establish causality in a strict sense, because many contextual factors can change between 2019 and 2025, including demand patterns, construction, and planning priorities.
-The analysis therefore supports descriptive and theory-informed interpretation of structural change rather than causal claims about policy effectiveness.
-
-\section{Implications for future research}\label{sec:future}
-
-Several extensions would deepen the theoretical and practical value of the analysis while remaining compatible with the network framework.
-
-A first extension is a temporal or frequency-weighted representation.
-Using edge weights based on number of departures or typical travel times would bring the analysis closer to efficiency concepts discussed in the literature on timetable-based networks \citep{gallotti2014}.
-A second extension is to incorporate directionality explicitly and to compare results under symmetric versus directional definitions of direct connectivity.
-A third extension is to move from independent node failures toward correlated disruption scenarios, for example by removing complete lines, removing sets of stops that share a corridor, or approximating bridge or arterial-road outages through structured multi-node removals.
-This would connect the robustness concept more directly to shared infrastructure dependencies.
-A fourth extension is to move toward a multimodal framework that includes ferry or rail layers, which would connect directly to multilayer transport network perspectives \citep{alessandretti2022,artime2022}.
-
-Taken together, these extensions would allow the core insights of this thesis to be tested for robustness and expanded toward richer operational and multimodal interpretations.
-Within the scope of the present work, the comparison already demonstrates that even a simple transfer-free reachability model can reveal meaningful structural change and clear distributional patterns of gains and losses between timetable versions.
+Despite these limitations, the comparison demonstrates that even a simple transfer-free reachability model can reveal meaningful structural change and clear distributional patterns of gains and losses between timetable versions.
 
 % ═══════════════════════════════════════════════════════════════════════════════
 %  CHAPTER 7 — Conclusion and outlook
 % ═══════════════════════════════════════════════════════════════════════════════
 \chapter{Conclusion and outlook}\label{ch:conclusion}
 
-\section{Answering the research question}\label{sec:answer}
-
 This thesis asked how the public transport network in Konstanz is structured, which hubs and bottlenecks can be identified, and how these features change between the 2019 and 2025 timetable versions.
 Using a transfer-free reachability representation, the results show a network with a stable core and meaningful redistribution at the margins.
 
-First, the overall structure becomes slightly more connected in 2025.
-The number of transfer-free connections increases, network density and clustering rise, and average shortest path length decreases marginally.
-Interpreted in this framework, the 2025 timetable offers slightly more direct reachability without transfers and a modest increase in local redundancy of direct connections.
+The overall structure becomes slightly more connected in 2025: more transfer-free connections, higher density and clustering, and marginally shorter average paths.
+At the same time, the identity of the most central hubs and bottlenecks remains highly stable, with Bahnhof and the central stops consistently ranking at the top.
+Beneath this stable core, the comparison reveals substantial rewiring.
+Many stop pairs gain direct connectivity while others lose it, and gains and losses are unevenly distributed.
+Some locations gain many new direct connections, while others, including Universit\"{a}t, lose direct reachability.
+This highlights a key practical implication: even when global connectivity improves, some users or areas can experience a higher transfer burden.
 
-Second, the identity of the most central hubs and bottlenecks remains highly stable.
-Bahnhof and the central stops around the city centre consistently rank at the top for both degree and betweenness.
-This indicates that timetable change did not alter the central skeleton of the network.
-Instead, it mainly reshaped connectivity around secondary nodes and corridors.
+Overall, the Konstanz bus network can be characterised as a highly connected network centred on a persistent core of hubs, with timetable revisions producing measurable shifts in where direct connectivity is concentrated and where it is reduced.
 
-Third, the comparison reveals substantial rewiring beneath the stable core.
-A large number of stop pairs gain direct connectivity while another set loses it, with most stop-level profiles changing.
-The winners-and-losers analysis shows that gains and losses are unevenly distributed across stops.
-Some locations gain many new direct connections, while others, including Universit\"{a}t, lose direct transfer-free reachability to multiple destinations.
-This highlights a key practical implication of the timetable change.
-Even when global connectivity improves, some users or areas can experience a higher transfer burden.
-
-Overall, the Konstanz bus network in 2019 and 2025 can be characterised as a highly connected network with very short average path lengths and relatively high clustering in the transfer-based representation.
-The structure is centred on a persistent core of hubs, with timetable revisions producing measurable shifts in where direct connectivity is concentrated and where it is reduced.
-This directly answers the research question by showing both structural stability at the core and structural change in transfer-free reachability patterns.
-
-\section{Outlook}\label{sec:outlook}
-
-Several extensions would strengthen the theoretical and practical reach of the analysis.
-First, a frequency-weighted or time-weighted network would move beyond the binary existence of a direct connection.
-This would allow the analysis to distinguish frequent direct links from rare ones and to approximate travel cost more realistically, while still remaining within a network framework.
-
-Second, a temporal extension could compare peak and off-peak snapshots or examine weekday versus weekend structures.
-This would address the time dependence of transit systems and clarify whether the observed changes are stable across time windows.
-
-Third, directionality could be incorporated explicitly.
-Even if the main analysis remains undirected for interpretability, a robustness check with directed connections would strengthen the methodological argument and reduce the risk that one-way service patterns are masked.
-
-Fourth, robustness could be extended beyond independent node failures toward correlated disruptions that reflect shared infrastructure and route interdependencies.
-For example, removing complete routes or simulating corridor-level outages would better approximate disruptions such as bridge closures or long-lasting road works, which can affect multiple stops and lines simultaneously.
-
-Fifth, the analysis could be expanded toward a multimodal representation, for example by adding ferry or rail layers, which would connect to broader multilayer transport perspectives.
-Alternatively, demand data or passenger counts could be used to weight network elements, shifting the focus from structural possibility to likely usage.
-
-Finally, an agent-based simulation could be used as an optional illustration rather than the core method.
-For example, agents could be assigned origin--destination pairs and simple routing rules to estimate how the distribution of transfers changes under the two timetable versions.
-This would be most useful if kept deliberately simple and used to visualise consequences of structural change, not to claim behavioural realism.
+Several extensions would strengthen the analysis.
+A frequency- or time-weighted network would allow distinguishing frequent direct links from rare ones.
+A temporal extension could compare peak and off-peak snapshots.
+Directionality could be incorporated as a robustness check.
+Correlated disruption scenarios, such as removing complete routes or simulating corridor-level outages, would better approximate real-world events like bridge closures.
+Expanding toward a multimodal representation with ferry or rail layers would connect to broader multilayer transport perspectives \citep{alessandretti2022,artime2022}.
+Finally, demand data or an agent-based simulation could shift the focus from structural possibility to likely usage patterns.
 
 % ---------------------------------------------------------------------------
 %  AI tool use statement
