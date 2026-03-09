@@ -383,6 +383,7 @@ In other words, each row represents an ordered pair of adjacent stops that appea
 The raw data were collected as ordered stop sequences for each bus line in the selected weekday snapshot.
 The R script then transforms these sequences into a transfer-free connectivity network in which two stops are connected if they are served by the same line, meaning they are reachable without changing buses.
 Importantly, this transfer-free representation is not limited to neighbouring stops in the timetable order, but connects any two stops that co-occur on at least one line pattern.
+The digitised data files and all analysis scripts are publicly available in the project repository \citep{bachinger2026}.
 
 Because the timetable information was digitised manually, basic plausibility checks were applied to verify stop-sequence coherence and line-identifier consistency (see Section~\ref{sec:approach}).
 
@@ -407,7 +408,7 @@ The year-to-year comparison therefore focuses on changes in connectivity pattern
 
 \section{Analytical approach and preprocessing}\label{sec:approach}
 
-All analyses were conducted in R \citep{rcore2025}.
+All analyses were conducted in R \citep{rcore2025}; the complete code is available in the project repository \citep{bachinger2026}.
 Network construction, centrality measures, clustering, and shortest-path-based metrics were computed using standard graph routines.
 In addition, permutation-based inference was used for node-level regression models relating betweenness centrality to structural predictors.
 This approach avoids relying on classical OLS $p$-values, which can be misleading when observations are interdependent, as is typically the case for network-derived node-level measures \citep{butts2008}.
@@ -881,6 +882,7 @@ Generative AI tools were used to support writing and coding, not to generate emp
 ChatGPT \citep{openai2025} was used for language editing (grammar, readability, and flow) and for drafting and refining text structure.
 GitHub Copilot \citep{github2025} was used for coding assistance (code completion and debugging suggestions) while implementing the analysis pipeline in R.
 All data were manually digitised by the author from the official timetable booklet, and all analytical choices, computations, and interpretations were made and verified by the author.
+The full analysis code, digitised datasets, and thesis source files are publicly available at \url{https://github.com/L9Prometheus/RBachelor} \citep{bachinger2026}.
 AI-generated suggestions were reviewed critically, adapted where appropriate, and checked against the underlying data and the cited literature.
 No external text was copied verbatim from AI outputs without revision and attribution.
 
