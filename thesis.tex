@@ -410,7 +410,7 @@ The year-to-year comparison therefore focuses on changes in connectivity pattern
 All analyses were conducted in R \citep{rcore2025}.
 Network construction, centrality measures, clustering, and shortest-path-based metrics were computed using standard graph routines.
 In addition, permutation-based inference was used for node-level regression models relating betweenness centrality to structural predictors.
-This approach avoids relying on classical OLS $p$-values, which can be misleading for network-derived outcomes.
+This approach avoids relying on classical OLS $p$-values, which can be misleading when observations are interdependent, as is typically the case for network-derived node-level measures \citep{butts2008}.
 Visualisations were generated with common plotting functions for matrix-style and network summary plots.
 
 Scope filters and stop-name harmonisation were applied as described in Chapter~\ref{ch:data}.
@@ -473,12 +473,10 @@ These measures link the empirical comparison to theoretical concepts of structur
 At the pair level, the adjacency matrix provides a binary outcome for each stop pair.
 For the year-to-year comparison, the analysis focuses on stop pairs that can be formed from the intersection of the two stop sets.
 For each pair, one of four categories is assigned:
-\begin{itemize}
-  \item A pair is \emph{unchanged connected} if the connection exists in both years.
-  \item A pair is \emph{unchanged not connected} if it exists in neither year.
-  \item A pair is \emph{gained} if it is absent in 2019 but present in 2025.
-  \item A pair is \emph{lost} if it is present in 2019 but absent in 2025.
-\end{itemize}
+(1)~a pair is \emph{unchanged connected} if the connection exists in both years;
+(2)~a pair is \emph{unchanged not connected} if it exists in neither year;
+(3)~a pair is \emph{gained} if it is absent in 2019 but present in 2025;
+(4)~a pair is \emph{lost} if it is present in 2019 but absent in 2025.
 This classification enables a direct description of how transfer-free reachability changes between timetable versions.
 
 \subsection{Node-level measures for hubs and bottlenecks}\label{sec:node-measures}
@@ -518,7 +516,7 @@ Fragmentation is tracked via the relative size of the largest connected componen
 \subsection{Permutation-based inference for centrality relationships}\label{sec:permutation-method}
 
 To assess whether structurally plausible predictors are associated with betweenness centrality beyond what would be expected under random assignment, this thesis applies permutation-based inference.
-This is important because node-level observations are not independent in a network, and centrality measures are mechanically tied to the overall topology.
+This is important because node-level observations are not independent in a network, and centrality measures are mechanically tied to the overall topology \citep{butts2008}.
 
 The outcome variable is betweenness centrality.
 For comparability, betweenness is first normalised to the interval $[0,1]$ using igraph's normalisation for undirected networks and then $z$-standardised.
@@ -696,6 +694,9 @@ Staad/Autof\"{a}hre also shows a net loss of~11, even though some new connection
 Additional losers include several stops such as Karlsruher Stra\ss{}e, Breslauer Stra\ss{}e~Ost, Breslauer Stra\ss{}e~West, Gutenbergweg, and Buhlenweg, each with a net loss of~10.
 
 Only 18 of the 104 common stops have a net change of exactly zero, which indicates that most stops experience at least some change in their direct reachability profile between 2019 and 2025, even if the global network metrics move only slightly.
+The distribution of net changes is right-skewed, with a median of~$+1$, a mean of~$+1.08$, and a standard deviation of~$7.98$.
+The interquartile range spans from~$-4$ to~$+4$, but the tails reach from~$-17$ to~$+33$, indicating that a small number of stops experience large shifts while most change only modestly.
+This dispersion underlines that the aggregate connectivity gain of~88 connections masks a wide spread of stop-level outcomes.
 
 This stop-level perspective reinforces the main interpretation of the year-to-year comparison.
 The overall structure remains stable, but the distribution of transfer-free direct connectivity shifts in meaningful ways, producing identifiable winners and losers.
@@ -836,7 +837,9 @@ As a result, the measures capture the existence of transfer-free options rather 
 This matters because a rare direct ride might be less useful than a frequent one-transfer alternative.
 The analysis therefore addresses structural connectivity and transfer requirements, not generalised travel cost.
 
-Fifth, manual digitisation can introduce transcription errors, although the pattern-based results would require systematic errors to change qualitatively.
+Fifth, manual digitisation can introduce transcription errors.
+Random typos in individual stop names would affect only isolated rows and are unlikely to shift aggregate metrics, but systematic errors, such as consistently omitting a line variant or misattributing stops to the wrong line, could bias connectivity counts for the affected corridor.
+The plausibility checks described in Section~\ref{sec:approach} reduce this risk, and the pattern-based results would require systematic errors to change qualitatively.
 Finally, the before-and-after design does not establish causality, because many contextual factors changed between 2019 and 2025.
 The analysis supports descriptive interpretation of structural change rather than causal claims about policy effectiveness.
 
@@ -860,10 +863,10 @@ This highlights a key practical implication: even when global connectivity impro
 Overall, the Konstanz bus network can be characterised as a highly connected network centred on a persistent core of hubs, with timetable revisions producing measurable shifts in where direct connectivity is concentrated and where it is reduced.
 
 Several extensions would strengthen the analysis.
-A frequency- or time-weighted network would allow distinguishing frequent direct links from rare ones.
-A temporal extension could compare peak and off-peak snapshots.
-Directionality could be incorporated as a robustness check.
-Correlated disruption scenarios, such as removing complete routes or simulating corridor-level outages, would better approximate real-world events like bridge closures.
+A frequency- or time-weighted network would allow distinguishing frequent direct links from rare ones; this is particularly relevant for the strong losers identified here, because a stop such as Universit\"at may retain frequent service despite losing direct connections, which a binary model cannot capture.
+A temporal extension could compare peak and off-peak snapshots, which would clarify whether the midday-based results generalise to commuter hours when the university generates most of its demand.
+Directionality could be incorporated as a robustness check to test whether the undirected assumption overstates connectivity for stops served asymmetrically across directions.
+Correlated disruption scenarios, such as removing complete routes or simulating corridor-level outages, would better approximate real-world events like bridge closures, an especially relevant scenario for Konstanz given its lakeside geography.
 Expanding toward a multimodal representation with ferry or rail layers would connect to broader multilayer transport perspectives \citep{alessandretti2022,artime2022}.
 Finally, demand data or an agent-based simulation could shift the focus from structural possibility to likely usage patterns.
 
